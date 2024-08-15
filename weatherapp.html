@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="weatherappstyle.css">
+    <title>天気予報アプリ</title>
+</head>
+<body>
+    <div class="main">
+        <div class="top-wrapper" id="top-wrapper">
+            <div class="container">
+                <div class="weather-info">
+                    <div class="top-info">
+                        <div class="topleft-info text">
+                            <h2><span id="date"></span></h2>
+                            <h3>最高　<span id="celsius-max"></span>℃</h3>
+                            <h3>最低　<span id="celsius-min"></span>℃</h3>
+                        </div>
+                        <div class="topright-info text">
+                            <h2><span id="area"></span></h2>
+                            <h3>湿度　<span id="humidity"></span>%</h3>
+                            <h3>風速　<span id="windspeed"></span>m/s</h3>
+                        </div>
+                    </div>
+                    <div class="bottom-info text">
+                        <div class="bottomleft-info">
+                            <h3>３時間ごとの天気</h3>
+                            <h3>明日以降の天気</h3>
+                        </div> 
+                        <div class="bottomright-info">
+                            <h3><div id="3hours-icons"></div></h3>
+                            <h4><div id="3hours-time">時間</div></h4>
+                            <h4><div id="3hours-weather">天気</div></h4>
+                            <h3><div id="weekly-icons"></div></h3>
+                            <h4><div id="weekly-dates">日付</div></h4>
+                            <h4><div id="weekly-time">時間</div></h4>
+                            <h4><div id="weekly-weather">天気</div></h4>
+                        </div>  
+                    </div>
+                </div>
+            </div>
+            <div class="cities" id="cities">
+                <h3><div class="city" data-city="Sapporoshi">札幌</div></h3>
+                <h3><div class="city" data-city="Tokyo">東京</div></h3>
+                <h3><div class="city" data-city="Mihama">美浜</div></h3>
+                <h3><div class="city" data-city="Aichi">愛知</div></h3>
+                <h3><div class="city" data-city="Osaka">大阪</div></h3>
+                <h3><div class="city" data-city="Izumo">出雲</div></h3>
+                <h3><div class="city" data-city="Fukuoka">福岡</div></h3>
+                <h3><div class="city" data-city="Naha">那覇</div></h3>
+            </div>    
+        </div>
+    </div>
+    <div id="weather-data"></div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="weatherapp.js"></script>
+
+</body>
+</html>

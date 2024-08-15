@@ -1,0 +1,113 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 基本的なスタイル */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+/* リセット後のリンクスタイル */
+a {
+    text-decoration: none;
+    color: #007bff; /* リンクの色はお好みで */
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* ページ全体のコンテナ */
+.container {
+    margin: auto;
+    width: 49%;
+    overflow: hidden;
+    padding: 10px;
+    background-color: #fff;
+    background-color: rgba(225, 225, 225, 0.4);
+}
+
+
+/*ここから*/
+.top-wrapper {
+    /* background-image: url("picture/morning.jpg"); */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: auto;
+    width: 100%;
+    padding: 245px 0 10px 0;
+}
+
+.text {
+    color: #333;
+}
+
+.top-info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.top-info h2 {
+    padding-bottom: 10px;
+    font-size: 25px;
+}
+
+.topleft-info {
+    float: left;
+}
+
+.topright-info {
+    margin-left: 200px;
+    margin-right: auto;
+}
+
+.bottom-info {
+    display: flex;
+    justify-content: start;
+}
+
+.bottomleft-info h3{
+    padding-bottom: 110px;
+}
+
+.bottomright-info {
+    margin-left: 20px;
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.bottomright-info p  {
+    display: inline-block;
+    width: 110px;
+    text-align: center;
+}
+
+.bottomright-info img {
+    display: inline-block;
+    margin: 0 20px;
+    width: 70px;
+    height: 70px;
+
+}
+
+.cities {
+    display: flex;
+    justify-content: center;
+}
+
+.city {
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.city:hover {
+    color: blue;
+}
