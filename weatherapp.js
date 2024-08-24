@@ -1,6 +1,5 @@
 'use strict'
 
-// test
 $(document).ready(function(){
     const key = '3b646f0e366c01220ad2c4e7e71ebe3f';
     let lat = '35.640570936547036';
