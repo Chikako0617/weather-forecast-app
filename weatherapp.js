@@ -1,7 +1,7 @@
 'use strict'
 
 $(document).ready(function(){
-    const key = import.meta.env.VITE_WEATHER_APP_API_KEY;
+    const key = '3b646f0e366c01220ad2c4e7e71ebe3f';
     let lat = '35.640570936547036';
     let lon = '140.0639253054739';
     const icon = 'http://openweathermap.org/img/wn/';
